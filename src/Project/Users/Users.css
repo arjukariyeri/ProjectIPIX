@@ -1,0 +1,68 @@
+.all-users-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #171717;
+    font-weight: 600;
+  }
+  
+  .all-users-title span {
+    position: relative;
+  }
+  
+  .all-users-title span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .user-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .user-avatar {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-avatar img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .user-email,
+  .user-role,
+  .user-password {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .user-email b,
+  .user-role b,
+  .user-password b {
+    font-weight: bold;
+  }
+  
